@@ -1,16 +1,29 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAUTAM JHA [ STOCK LEARNERS™ ] - Telegram</title>
 
-<title>HAFIZ SHAKIL</title>
+    <!-- ================= PHOTO URL ================= -->
+    <script>
+        const PHOTO_URL = "https://amruta-learningcommunity.lovable.app/__l5e/assets-v1/6e66e62d-85c9-450c-af5b-0cb2d8ad0413/trade-with-amruta-dp.png";
+    </script>
+    <!-- ============================================== -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,209 +33,234 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1620704899451218');
+fbq('init', '4284770325078715');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1620704899451218&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=4284770325078715&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
-}
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#1a0000,#3b0000,#5e0000,#8b0000);
-background-size:400% 400%;
-animation:gradientMove 12s infinite alternate;
-overflow:hidden;
-}
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-@keyframes gradientMove{
-0%{background-position:0% 50%;}
-100%{background-position:100% 50%;}
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-/* floating glow circles */
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
 
-.circle{
-position:absolute;
-border-radius:50%;
-filter:blur(120px);
-opacity:0.6;
-animation:float 10s infinite alternate;
-}
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #0F172A;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+        }
 
-.circle1{
-width:300px;
-height:300px;
-background:#ff0000;
-top:10%;
-left:10%;
-}
+        .heading-font {
+            font-family: 'Outfit', sans-serif;
+        }
 
-.circle2{
-width:250px;
-height:250px;
-background:#ff4d4d;
-bottom:10%;
-right:10%;
-}
+        /* Telegram Blue Accent */
+        .telegram-bg {
+            background-color: #24A1DE;
+        }
 
-@keyframes float{
-0%{transform:translateY(0px);}
-100%{transform:translateY(-60px);}
-}
+        .telegram-bg:hover {
+            background-color: #1A8CDB;
+        }
 
-/* glass card */
+        .telegram-text {
+            color: #24A1DE;
+        }
 
-.card{
-position:relative;
-width:340px;
-padding:40px 30px;
-border-radius:25px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.2);
-text-align:center;
-color:white;
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-animation:cardFloat 4s ease-in-out infinite;
-}
+        /* Ambient Light Glow */
+        .ambient-glow {
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(
+                circle,
+                rgba(36, 161, 222, 0.12) 0%,
+                rgba(255, 255, 255, 0) 70%
+            );
+            filter: blur(40px);
+            pointer-events: none;
+            z-index: 0;
+        }
 
-@keyframes cardFloat{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-}
+        /* Soft Pulse Animation for CTA Button */
+        .btn-pulse {
+            box-shadow: 0 8px 25px rgba(36, 161, 222, 0.35);
+            animation: pulse-wave 2s infinite;
+        }
 
-.profile{
-width:110px;
-height:110px;
-border-radius:50%;
-border:4px solid white;
-object-fit:cover;
-margin-bottom:15px;
-}
+        @keyframes pulse-wave {
+            0% {
+                box-shadow: 0 0 0 0 rgba(36, 161, 222, 0.5);
+            }
 
-h2{
-margin-bottom:10px;
-font-size:22px;
-}
+            70% {
+                box-shadow: 0 0 0 16px rgba(36, 161, 222, 0);
+            }
 
-.text{
-font-size:14px;
-opacity:0.9;
-line-height:1.6;
-margin-bottom:25px;
-}
-
-/* button */
-
-.btn{
-display:inline-flex;
-align-items:center;
-gap:12px;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
-padding:14px 28px;
-border-radius:50px;
-font-weight:bold;
-color:white;
-text-decoration:none;
-font-size:16px;
-transition:0.4s;
-position:relative;
-overflow:hidden;
-}
-
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px #00c6ff;
-}
-
-.btn i{
-font-size:18px;
-}
-
-/* disclaimer */
-
-.disclaimer{
-margin-top:20px;
-font-size:11px;
-opacity:0.6;
-text-align:center;
-color:white;
-}
-
-.ads{
-text-align:center;
-margin-top:5px;
-font-size:12px;
-color:white;
-}
-
-.ads a{
-color:#00c6ff;
-font-weight:bold;
-text-decoration:none;
-}
-
-</style>
+            100% {
+                box-shadow: 0 0 0 0 rgba(36, 161, 222, 0);
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="flex flex-col items-center justify-center p-4 sm:p-6 relative overflow-x-hidden">
 
-<div class="circle circle1"></div>
-<div class="circle circle2"></div>
+    <!-- Background Subtle Glow -->
+    <div class="ambient-glow"></div>
 
-<div>
+    <main class="w-full max-w-sm z-10 my-auto">
 
-<div class="card">
+        <!-- Main White Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 text-center shadow-xl shadow-slate-200/80 border border-slate-100 space-y-6 relative">
 
-<!-- JPG PHOTO -->
-<img src="https://i.ibb.co/TxsVK148/logo.png" class="profile">
+            <!-- Profile Avatar / Brand Logo -->
+            <div class="relative inline-block">
 
-<h2>👑 𝗦𝗮𝗵𝗶𝗹 𝗠𝗼𝘁𝗵𝘀𝗿𝗮™ 👑</h2>
+                <div class="w-24 h-24 mx-auto rounded-full p-1 bg-gradient-to-br from-sky-400 to-blue-600 shadow-md">
 
-<div class="text">
-📊 Daily Market Analysis & Learning<br>
-🎯 14+ Years Trading Experience<br>
-🔥 Beginner To Advanced Guidance
-</div>
+                    <div class="w-full h-full bg-slate-900 rounded-full flex flex-col items-center justify-center text-white overflow-hidden border-2 border-white">
 
-<a class="btn" href="https://t.me/+jMSwnivXi15lNmE9" target="_blank">
-<i class="fab fa-telegram"></i>
-𝗝𝗼𝗶𝗻 𝗩𝗶𝗽 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺
-<i class="fab fa-telegram"></i>
-</a>
+                        <!-- PHOTO -->
+                        <img
+                            id="profilePhoto"
+                            src=""
+                            alt="GAUTAM JHA"
+                            class="w-full h-full object-cover"
+                        >
 
-</div>
+                    </div>
+                </div>
 
-<div class="disclaimer">
-This Channel is For Educational And informational Purposes Only.
-</div>
+                <!-- Telegram Verified Blue Badge -->
+                <div class="absolute bottom-0 right-0 bg-[#24A1DE] text-white w-7 h-7 rounded-full flex items-center justify-center border-2 border-white text-xs shadow-sm">
+                    <i class="fa-solid fa-check"></i>
+                </div>
 
-<div class="ads">
-Ads Managed by <a href="https://t.me/+jMSwnivXi15lNmE9" target="_blank">APEagency</a>
-</div>
+            </div>
 
-</div>
+            <!-- Title & Subtitle -->
+            <div class="space-y-1">
 
-<script>
+                <h1 class="heading-font text-2xl font-black text-slate-900 tracking-tight">
+                    Trade With Amruta™
+                </h1>
 
-setTimeout(function(){
-window.location.href="https://t.me/+jMSwnivXi15lNmE9";
-},30000);
+                <p class="text-xs font-extrabold telegram-text tracking-widest uppercase">
+                    STOCK EXPERTS<span class="text-[9px]">™</span>
+                </p>
 
-</script>
+                <p class="text-[11px] text-slate-400 font-semibold tracking-wider pt-0.5">
+                    LEARN • ANALYZE • EARN
+                </p>
+
+            </div>
+
+            <!-- Active Members Count -->
+            <div class="inline-flex items-center gap-2 bg-sky-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold">
+
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#24A1DE]"></span>
+                </span>
+
+                <span>50,000+ Traders Joined</span>
+
+            </div>
+
+            <!-- Simplified 2 Core Points -->
+            <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100 text-left space-y-3 text-xs text-slate-700 font-medium">
+
+                <div class="flex items-center gap-3">
+
+                    <div class="w-7 h-7 rounded-lg bg-sky-100 text-[#24A1DE] flex items-center justify-center shrink-0 text-xs">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+
+                    <span>Daily Nifty & Bank Nifty Market Levels</span>
+
+                </div>
+
+                <div class="flex items-center gap-3">
+
+                    <div class="w-7 h-7 rounded-lg bg-sky-100 text-[#24A1DE] flex items-center justify-center shrink-0 text-xs">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <span>Real-Time Stock Breakout & Educational Charts</span>
+
+                </div>
+
+            </div>
+
+            <!-- High Impact CTA Button -->
+            <div class="pt-1 space-y-2">
+
+                <a
+                    href="https://t.me/+qh4BODRsHEQ2MjRl"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-pulse w-full telegram-bg text-white font-bold py-3.5 px-6 rounded-2xl text-sm tracking-wide flex items-center justify-center gap-2.5 transition-all duration-200 hover:scale-[1.02]"
+                >
+
+                    <i class="fa-brands fa-telegram text-xl"></i>
+
+                    <span>JOIN FREE TELEGRAM</span>
+
+                </a>
+
+                <p class="text-[10px] text-slate-400 font-medium">
+                    ⚡ Instant Free Access • No Registration Required
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Minimal Disclaimer Footer -->
+        <footer class="mt-5 text-center text-[10px] text-slate-400 space-y-1 px-2">
+
+            <p class="font-medium">
+                ⚠️ For Educational Purposes Only. Not SEBI Registered.
+            </p>
+
+            <p>
+                © <span id="year">2026</span> Trade With Vikas™. All rights reserved.
+            </p>
+
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        // PHOTO URL se image automatically load hogi
+        document.getElementById("profilePhoto").src = PHOTO_URL;
+
+        // Current Year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
+</html>
+    
+  </body>
+  
 </html>
